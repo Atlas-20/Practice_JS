@@ -1,0 +1,73 @@
+ /* *{
+      /* box-sizing: border-box;  */
+    /* padding:0;
+    margin:0;   */
+   /*  outline:1px solid red; */
+ 
+  body{
+    /* font-family: 'Courier New', Courier, monospace ; */
+    /* we should give font-family to body becaues they are later inherited  */
+  font-family: "Poppins", sans-serif;
+  background-color: #e8f0d9;
+  /* height:100vh; */
+}
+
+main{
+    margin:3px;
+    padding:2px;
+}
+h1{
+    font-size:64px;
+    color:#23871e;
+    /* width: 511px;*/  
+    /* font-weight:700; */
+    text-align:center;
+    font-weight:900;
+}
+h1 span{
+    color:brown;
+}
+h2 img{
+    vertical-align:middle;
+    margin-left:10px;
+}
+.cardcontainer{
+    max-width:660px;
+    /* width is not responsive but min or max width is responsive to make it a habit  */
+    background-color:rgb(219, 234, 229);
+    border-radius:10px;
+    margin-inline:auto;
+    /*  Well this is used to make any element take to center without flex */
+    padding:32px 42px ;
+    box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.3)
+}
+.progressbar{
+    height:34px;
+    background-color:rgb(186, 199, 237);
+    border-radius:30px;
+}
+.progressvalue{
+    height:100%;
+    background-color:#23871e;
+    width:33%;
+    border-radius: 30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:500;
+    color:white;
+    font-size:12px;
+}
+.goal-alert{
+    /* padding-top:45px; */
+    color:red;
+}
+@media( max-width:700px) {
+    h1{
+        font-size:32px;
+    }
+    h1 span{
+        font-size:32px;
+    }
+}
