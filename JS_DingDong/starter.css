@@ -32,6 +32,7 @@ h2 img{
     margin-left:10px;
 }
 .cardcontainer{
+    
     max-width:660px;
     /* width is not responsive but min or max width is responsive to make it a habit  */
     background-color:rgb(219, 234, 229);
@@ -39,7 +40,9 @@ h2 img{
     margin-inline:auto;
     /*  Well this is used to make any element take to center without flex */
     padding:32px 42px ;
-    box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.3)
+    box-shadow:0 0 10px 5px rgba(0, 0, 0, 0.1);
+
+    /* min-height:810px; */
 }
 .progressbar{
     height:34px;
@@ -62,12 +65,155 @@ h2 img{
 .goal-alert{
     /* padding-top:45px; */
     color:red;
+    margin:20px 0px;
 }
+.first-checker{
+    background-color:azure;
+    height: 87px;
+    border-radius :17px;
+
+    display:flex;
+    align-items:center;
+    padding:12px;
+}
+.checkbox{
+    width: 24px;
+    height: 24px;
+    border-radius:100%;
+    /* background-color: aquamarine; */
+    margin-right:15px;
+    /* border:2px black; */
+    border:2px solid rgb(125, 110, 110);
+    border-width:2px;
+    flex-shrink:0;
+}
+.first-checker input {
+    border:none;
+    font-size:18px;
+    font-weight:500;
+    font-family:inherit;
+    outline:none;
+    flex:1;
+    min-width:0;
+    width:100%;
+}
+#text::placeholder {
+    color:rgb(186, 164, 138);
+}
+.second-checker{
+    margin:30px 0px;
+
+     background-color:azure;
+    height: 87px;
+    border-radius :17px;
+
+    display:flex;
+    align-items:center;
+    padding:12px;
+}
+.second-checker input {
+    border:none;
+    font-size:18px;
+    font-weight:500;
+    font-family:inherit;
+    outline:none;
+    flex:1;
+    min-width:0;
+    width:100%;
+}
+.third-checker{
+     background-color:azure;
+    height: 87px;
+    border-radius :17px;
+
+    display:flex;
+    align-items:center;
+    padding:12px;
+}
+.third-checker input {
+    border:none;
+    font-size:18px;
+    font-weight:500;
+    font-family:inherit;
+    outline:none;
+    flex:1; 
+    min-width:0;
+    width:100%; 
+/* 
+     flex:1;
+    min-width:0;
+    width:100%; */
+}
+#text2::placeholder{
+    color:rgb(186, 164, 138);
+}
+#text3::placeholder{
+    color:rgb(186, 164, 138);
+}
+.bottom-text{
+font-family: Poppins;
+font-weight: 500;
+font-size: 16px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+margin-top:34px;
+}
+.last-text{
+    font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 10px;
+
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+
+
+margin:90px;
+}
+/* #text::placeholder,
+#text::-webkit-input-placeholder,
+#text::-moz-placeholder,
+#text:-ms-input-placeholder,
+#text::-ms-input-placeholder {
+    color: rgb(228, 219, 208);
+    opacity: 1; */
 @media( max-width:700px) {
     h1{
         font-size:32px;
     }
     h1 span{
         font-size:32px;
+    }
+    .progressbar{
+        height:24px;
+    }
+    .progressvalue{
+         height:100%;
+        background-color:#23871e;
+    }
+     /* .cardcontainer{
+        padding:24px 18px;
+    } */
+    .progressvalue{
+        font-size:9px;
+    }
+    .second-checker{
+        height:40px;
+
+    }
+    .third-checker{
+    height:40px;
+    }
+    .first-checker{
+         height:40px;
+    }
+    .last-text{
+        margin:40px;
     }
 }
