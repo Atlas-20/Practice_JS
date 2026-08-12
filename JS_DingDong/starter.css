@@ -1,9 +1,9 @@
- /* *{
-      /* box-sizing: border-box;  */
-    /* padding:0;
-    margin:0;   */
-   /*  outline:1px solid red; */
- 
+ *{
+      box-sizing:border-box;  
+     /* padding:0;
+    margin:0;    */
+    /* outline: 1px solid red;  */
+ }
   body{
     /* font-family: 'Courier New', Courier, monospace ; */
     /* we should give font-family to body becaues they are later inherited  */
@@ -52,7 +52,7 @@ h2 img{
 .progressvalue{
     height:100%;
     background-color:#23871e;
-    width:33%;
+    width:66%;
     border-radius: 30px;
 
     display:flex;
@@ -65,7 +65,7 @@ h2 img{
 .goal-alert{
     /* padding-top:45px; */
     color:red;
-    margin:20px 0px;
+    margin:10px 0px;
 }
 .first-checker{
     background-color:azure;
@@ -86,6 +86,11 @@ h2 img{
     border:2px solid rgb(125, 110, 110);
     border-width:2px;
     flex-shrink:0;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    /* this was done to just to keep the tick in the center of te checkbox  */
 }
 .first-checker input {
     border:none;
@@ -120,6 +125,7 @@ h2 img{
     flex:1;
     min-width:0;
     width:100%;
+    /* color:green; */
 }
 .third-checker{
      background-color:azure;
@@ -139,6 +145,8 @@ h2 img{
     flex:1; 
     min-width:0;
     width:100%; 
+
+   
 /* 
      flex:1;
     min-width:0;
@@ -175,6 +183,31 @@ vertical-align: middle;
 
 
 margin:90px;
+}
+.completed{
+    color:green;
+    text-decoration-line:line-through;
+    
+}
+.completed input{
+    color:green;
+
+}
+
+   
+    /* display:block;*/
+
+.completed .checkbox{
+    background-color:green;
+    border-color:green;
+    align-items:center;
+}
+.goal-alert{
+    /* display:none; */
+    visibility:hidden;
+
+    margin-top:10px;
+    font-size:15px;
 }
 /* #text::placeholder,
 #text::-webkit-input-placeholder,
